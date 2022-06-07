@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Toggle from './components/Toggle';
+import Category from './components/Category';
+import Menu from './components/Menu';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="App">
+      <Toggle/>
+      <section className="menu section">
+        <div className='title'>
+          <h2>Our Menu</h2>
+          <div className='underline'></div>
+        </div>
+        <Category/>
+        <Menu/>
+      </section>
+    </main>
   );
 }
 
